@@ -1,0 +1,225 @@
+/* form */
+.checkbox-container {
+    position: relative;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 15px;
+    width: 370px;
+  }
+
+  .checkbox-label {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background: #414144;
+    color: white;
+    padding: 0 5px;
+    font-size: 12px;
+    border-radius:15px
+  }
+
+  .checkbox-options {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .checkbox-option {
+    display: flex;
+    align-items: center;
+  }
+
+  .checkbox-option input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+
+  }
+
+  .checkbox-option label {
+    color: white;
+  }
+
+
+  .select-container {
+    position: relative;
+    margin-bottom: 20px;
+    padding-right: 10px;
+    border: 1px solid white;
+    border-radius: 15px;
+    color: white;
+    width: 300px;
+  }
+  .select-label {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background: #414144;
+    color: white;
+    padding: 0 5px;
+    font-size: 12px;
+    border-radius:15px
+  }
+
+  .custom-select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    outline: none;
+  }
+
+  .custom-select option {
+    color: black;
+  }
+
+  .date-container {
+    position: relative;
+    margin-bottom: 20px;
+    border: 1px solid white;
+    border-radius: 15px;
+    color: white;
+    width: 300px;
+    background-color: transparent;
+  }
+
+  .date-label {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background: #414144;
+    color: white;
+    padding: 0 5px;
+    font-size: 12px;
+    border-radius:15px
+  }
+
+  .custom-date {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    outline: none;
+  }
+
+  .custom-date::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+  }
+
+  .file-container {
+    position: relative;
+    margin-bottom: 20px;
+    border: 1px solid white;
+    border-radius: 15px;
+    color: white;
+    width: 300px;
+    background-color: transparent;
+  }
+  .file-label {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background: #414144;
+    color: white;
+    padding: 0 5px;
+    font-size: 12px;
+    border-radius:15px
+  }
+  .custom-file {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    
+  }
+  
+  .textarea-container {
+    position: relative;
+    margin-bottom: 20px;
+    border: 1px solid white;
+    border-radius: 15px;
+    color: white;
+    width: 300px;
+    background-color: transparent;
+  }
+
+  .textarea-label {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background: #414144;
+    color: white;
+    padding: 0 5px;
+    font-size: 12px;
+    border-radius:15px
+  }
+
+  .custom-textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    resize: none;
+  }
+/* pesan data masuk ke database */
+  .session-masuk {
+    background-image: url('../assets/session.png');
+    background-size: 100% 100%; 
+    background-repeat: no-repeat; 
+    height: 101px; 
+    width: 416px; 
+    margin-bottom:20px; 
+    margin-left:20px; 
+    display:flex;  
+    padding-left:30px; 
+    position:relative
+  }
+  .huruf-jepang {
+    font-family: 'Noto Serif JP'; 
+    font-size:20px; 
+    font-weight:bold; 
+    color:#3CC1CA;line-height:1; display:flex; flex-direction:column; margin-top:10px
+  }
+  .pesan-container {
+    display: flex; flex-direction:column
+  }
+  .pesan-satu {
+    font-size: 30px; font-weight:bold; font-family:'Inter'; margin-left:20px; margin-top:10px
+  }
+  .pesan-dua {
+    font-size: 30px; font-weight:bold; font-family:'Inter'; margin-left:20px; margin-top:-10px 
+  }
+  .btn-close-session {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #3CC1CA;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    position:absolute; 
+    top:0; 
+    right:-10px;
+    border: none;
+  }
+/* section kiri */
+.sectionkiri{
+  
+}
+
+.kiri-1 {
+  
+}
+.kiri-1-2 {
+  
+}
+.kiri-1-3 {
+  
+}
+/* section kanan */

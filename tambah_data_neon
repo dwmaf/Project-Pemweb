@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $kelamin = $_POST['kelamin'];
     $domisili = $_POST['domisili'];
     $tgl_lahir = $_POST['tgllahir'];
-    
+
     if (isset($_POST['makul'])) {        
         $mata_kuliah = implode(", ", $_POST['makul']);
     } else {
@@ -20,23 +20,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $file_extension = strtolower(pathinfo($_FILES["foto"]["name"], PATHINFO_EXTENSION));
     $random_filename = uniqid() . "." . $file_extension;
     $target_file = $target_dir . $random_filename;
-    $uploadOk = 1;
 
     if (move_uploaded_file($_FILES["foto"]["tmp_name"], $target_file)) {        
+        // Use parameterized queries for security
         $sql = "INSERT INTO mahasiswa (nim, nama, kelamin, mata_kuliah, domisili, tgl_lahir, path_foto) 
-                VALUES ('$nim', '$nama', '$kelamin', '$mata_kuliah', '$domisili', '$tgl_lahir', '$target_file')";
+                VALUES ($1, $2, $3, $4, $5, $6, $7)";
 
-        if ($conn->query($sql) === TRUE) {
+        // Prepare the query
+        $result = pg_query_params($conn, $sql, array($nim, $nama, $kelamin, $mata_kuliah, $domisili, $tgl_lahir, $target_file));
+
+        if ($result) {
             $_SESSION['success_message'] = "Data berhasil dimasukkan ke database.";
             header("Location: index.php");
             exit();
         } else {
-            echo "Error: " . $sql . "<br>" . $conn->error;
+            echo "Error: " . pg_last_error($conn);
         }
     } else {
         echo "Maaf, terjadi kesalahan saat mengupload file.";
     }
 }
 
-$conn->close();
+pg_close($conn);
 ?>

@@ -1,93 +1,142 @@
 <?php
 session_start();
 ?>
-
-
-
 <!DOCTYPE html>
 <html>
 
 <head>
   <title>Latihan PemWeb</title>
-  <!-- <link rel="stylesheet" type="text/css" href="/Pemweb/styles.css"> -->
+  <link rel="stylesheet" type="text/css" href="/Pemweb/css/form.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="/Pemweb/css/section-kiri.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+</head>
+<style>
+  body {
+    background-image: url('assets/aset2.jpg');
+    background-size: cover;
+    backdrop-filter: blur(3px);
+  }
+
+  @font-face {
+    font-family: 'Bento';
+    src: url('assets/Bento-2OXaW.otf') format('opentype');
+  }
+
+  .bento {
+    font-family: 'Bento', sans-serif;
+  }
+</style>
 </head>
 
 <body>
-  <?php
-  // Cek apakah ada pesan sukses di session
-  if (isset($_SESSION['success_message'])) {
-    echo "<p style='color: green;'>" . $_SESSION['success_message'] . "</p>";
-    // Hapus pesan setelah ditampilkan
-    unset($_SESSION['success_message']);
-  }
-  ?>
-  <table width="100%">
-  <tr id="header" style="text-align: center" class="bg-secondary">
-      <th colspan="3" style="padding: 50px 0; color: white">
-        <h1>JUDUL WEBSITE</h1>
-      </th>
-    </tr>
 
-    <tr style="text-align: center">
-      <th colspan="3" style="padding: 10px 0;">
-        <h3 style="display: inline-block; margin-right: 20px;"><a href="index.php">HOME</a> </h3>
-        <h3 style="display: inline-block; margin-right: 20px"><a href="kontak.php">KONTAK</a></h3>
-        <h3 style="display: inline-block; margin-right: 20px;"><a href="webc.php">LATIHAN</a> </h3>
-      </th>
-    </tr>
-    <tr>
-      <td bgcolor="#92d1c0" style="vertical-align: top; padding-left: 20px">
-        <p style="font-weight: bold">Menu Kiri</p>
-        <ul>
-          <li>Coffee</li>
-          <li>Tea</li>
-          <li>Milk</li>
-        </ul>
-      </td>
+  <!-- main section -->
+  <div class="letshiditxl  m-1 gap-1 ">
+    <?php include 'components/sectionkiri.php'; ?>
+    <?php include 'components/tengah-index.php'; ?>
+    <?php include 'components/sectionkanan.php'; ?>
+  </div>
+  <!-- ini lg-md -->
+  <div class="letshiditlg" style="flex-direction:column ">
+    <?php include 'components/lg/tengah-index-lg.php'; ?>
+    <div style="display: flex; margin:10px; justify-content:space-between">
+      <?php include 'components/lg/kiri-lg.php'; ?>
+      <?php include 'components/lg/kanan-lg.php'; ?>
+    </div>
+  </div>
+  <!-- ini sm -->
+  <div class="letshiditsm" style="flex-direction:column; padding: 10px;">
+    <?php include 'components/sm/tengah-index-sm.php'; ?>
+    <?php include 'components/sm/kiri-sm.php'; ?>
+    <?php include 'components/sm/kanan-sm.php'; ?>
+  </div>
+  <div class="letshiditsm">ini sm display</div>
 
-      <td width="50%" style="padding-left: 20px; padding-bottom: 20px">
-        <p
-          style="
-              color: red;
-              font-size: 34px;
-              font-family: Arial, Helvetica, sans-serif;
-            ">
-          <strong>Ini bagian judul</strong>
-        </p>
-        <h2 style="color: blue">Judul 2</h2>
-        <h3>Judul 3</h3>
-        <p><b>bfns vj</b> df dfnckldsncjndsj</p>
-        <p>nvhfdbvhf dhv fh</p>
-        <p>ini paragraf. <i>paragraf peratama</i></p>
-        <p>JFBKSDKBSDKNCKDJSNJ</p>
-        <p>KSDNKJSDCSDNJV DFJK <u> DNSLJFNS</u></p>
-        <img src="cake6.png" height="200px" />
-        <br />
-        <a
-          href="https://edlink.id/panel"
-          target="_blank">Klik Link dsiini</a>
-      </td>
 
-      <td bgcolor="#9bcaf6" style="vertical-align: top">
-        <p style="font-weight: bold; padding-left: 20px">Menu Kanan</p>
-        <ol style="padding-left: 60px">
-          <li>Coffee</li>
-          <li>Tea</li>
-          <li>Milk</li>
-        </ol>
-      </td>
-    </tr>
-    <tr>
-      <td
-        id="footer"
-        colspan="3">
-        FOOTER
-      </td>
-    </tr>
-  </table>
 
+
+  <style>
+    @media (max-width: 576px) {
+      .letshiditxl {
+        display: none;
+      }
+
+      .letshiditlg {
+        display: none;
+      }
+      .letshiditsm {
+        display: flex;
+      }
+    }
+
+    @media (min-width: 576px) AND (max-width:768px) {
+      .letshiditxl {
+        display: none;
+      }
+
+      .letshiditlg {
+        display: flex;
+      }
+
+      .letshiditsm {
+        display: none;
+      }
+      .tengah-lg-md {
+        background-image: url('assets/md/tengah-md.png');
+      }
+    }
+
+    @media (min-width: 768px) AND (max-width:992px) {
+      .letshiditxl {
+        display: none;
+      }
+
+      .letshiditlg {
+        display: flex;
+      }
+
+      .letshiditsm {
+        display: none;
+      }
+      .tengah-lg-md {
+        background-image: url('assets/lg/tengah-lg.png');
+      }
+    }
+
+    @media (min-width: 992px) {
+      .letshiditxl {
+        display: flex;
+      }
+
+      .letshiditlg {
+        display: none;
+      }
+
+      .letshiditsm {
+        display: none;
+      }
+    }
+  </style>
+  <script>
+    document.querySelector('.btn-close-session').addEventListener('click', function() {
+      document.querySelector('.session-masuk').style.display = 'none';
+    });
+
+    // $(document).ready(function() {
+    //   $(".btn-menu-lain").click(function() {
+    //     if ($(".menu-lain").is(":visible")) {
+    //       $(".menu-lain").hide(); // Sembunyikan tanpa efek
+    //     } else {
+    //       $(".menu-lain").show(); // Tampilkan tanpa efek
+    //     }
+    //   });
+    // });
+  </script>
 
 </body>
 
