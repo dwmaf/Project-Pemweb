@@ -1,10 +1,12 @@
 <div class="sectionkiri  " style="background-image: url('assets/kiri.png'); 
   background-size: 100% 100%; 
   background-repeat: no-repeat; 
-  max-width:90%; height: 886px; 
+  max-width:100%; height: 886px; 
   display: flex; 
   flex-direction: column;
-  justify-content: space-between;">
+  justify-content: space-between;
+  padding:20px;
+  margin-top:10px">
       <div class="kiri-1" style="display: flex; justify-content: space-between; margin-right:50px; ">
         <div class="kiri-1-1" name="huruf jepang" style="font-family: 'Noto Serif JP'; font-size:60px; font-weight:bold; color:#3CC1CA; margin-left:10px; ">ォ</div>
         <a class="kiri-1-2" href="index.php" style="font-size: 18px; display: flex; align-items: center; text-decoration:none; color:black; ">

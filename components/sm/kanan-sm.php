@@ -1,4 +1,4 @@
-<div style="   background-image: url('assets/kanan.png'); background-size: 100% 100%; background-repeat: no-repeat;max-width:90%;  height: 886px; display: flex; flex-direction: column; justify-content: space-between; ">
+<div style="   background-image: url('assets/kanan.png'); background-size: 100% 100%; background-repeat: no-repeat;max-width:100%;  height: 886px; display: flex; flex-direction: column; justify-content: space-between; padding:20px; margin-top:10px">
       <div style="margin-left: 20px; margin-top:20px">
         <div class="bento" style="font-family: 'Bento'; font-size:60px; line-height:1">Slicing</div>
         <div class="bento" style="font-family: 'Bento'; font-size:60px; line-height:0; margin-top:10px">stack</div>

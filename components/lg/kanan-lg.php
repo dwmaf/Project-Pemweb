@@ -14,8 +14,8 @@
         <div name="03" class="" style=" font-size: 70px; font-weight:bold; font-family:'Inter'; color:#3CC1CA;">03</div>
         <div name="huruf jepang" style="font-family: 'Noto Serif JP'; font-size:140px; font-weight:bold; color:#3CC1CA; margin-top:-60px">ネ</div>
       </div>
-      <div name="gambar-right" style="border-radius: 100px; overflow:hidden; height: 40%;margin-left:20px; margin-right:20px; margin-top:-100px; position:relative; z-index:1; ">
-        <img src="assets/aset2.jpg" alt="" style="width: 100%;display: block;object-fit: none;object-position:100% 0">
+      <div name="gambar-right" style="background:red; border-radius: 100px; overflow:hidden; height: 40%;margin-left:20px; margin-right:20px; margin-top:-100px; position:relative; z-index:1; ">
+        <img src="assets/aset2.jpg" alt="" style="width: 100%;height:100%; object-fit: none;object-position:100% 0">
       </div>
       <a target="_blank" href="https://github.com/dwmaf/Project-Pemweb" name="tombol merah" class="btn" style="width: 80px; height: 80px; border-radius: 100%; background-color: red; display: flex; justify-content: center; align-items: center; z-index: 2; position:relative; margin-top: -50px; margin-left:auto; margin-right:auto">
         <i class="fa-solid fa-code fa-2x" style="color:white"></i>

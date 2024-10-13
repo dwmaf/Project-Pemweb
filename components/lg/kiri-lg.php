@@ -17,7 +17,7 @@
       </div>
       <p class="kiri-2" name="tugas pemweb"  style="font-size: 35px; font-weight:bold; font-family:'Inter'; margin-left:20px; margin-top:30px">UTS Pemweb</p>
       <a class="kiri-3" target="_blank" href="https://github.com/dwmaf/Project-Pemweb" name="tombol hijau" class="btn" style="margin-top:5px;margin-left:20px;width: 80px;height: 80px;border-radius: 100%;background-color: #3CC1CA;display: flex;justify-content: center;align-items: center; z-index: 2;position:relative"><i class="fa-solid fa-code fa-2x" style="color:white"></i></a>
-      <div class="kiri-4" name="gambar" class="" style="border-radius: 100px; margin-top:-40px;margin-left:20px; margin-right:20px; height:40%; overflow:hidden; z-index: 1; position:relative ">
+      <div class="kiri-4" name="gambar" class="" style="border-radius: 100px; overflow:hidden;height:40%;margin-left:20px; margin-top:-40px; margin-right:20px;  z-index: 1; position:relative ">
         <img src="assets/aset2.jpg" alt="">
       </div>
 
