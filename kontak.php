@@ -39,76 +39,19 @@ session_start();
   }
   ?>
 
-<div class="letshiditxl  m-1 gap-1 " >
-    <!-- section kiri -->
+  <div class="letshiditxl " style="margin: 4px; gap:4px">
     <?php include 'components/sectionkiri.php'; ?>
-
-    <!-- section tengah index-->
     <?php include 'components/tengah-kontak.php'; ?>
-    <!-- section kanan -->
     <?php include 'components/sectionkanan.php'; ?>
   </div>
-   <div class="letshiditsm">ini sm display</div>
-   <div class="letshiditmd">ini md display</div>
-   <div class="letshiditlg">ini lg display</div>
-  <style>
-    @media (max-width: 576px)  {
-      .letshiditxl {
-        display: none;
-      }
-      .letshiditlg {
-        display: none;
-      }
-      .letshiditmd {
-        display: none;
-      }
-      .letshiditsm {
-        display: flex;
-      }
-    }
-    @media (min-width: 576px) AND (max-width:768px)  {
-      .letshiditxl {
-        display: none;
-      }
-      .letshiditlg {
-        display: none;
-      }
-      .letshiditmd {
-        display: flex;
-      }
-      .letshiditsm {
-        display: none;
-      }
-    }
-    @media (min-width: 768px) AND (max-width:992px)  {
-      .letshiditxl {
-        display: none;
-      }
-      .letshiditlg {
-        display: flex;
-      }
-      .letshiditmd {
-        display: none;
-      }
-      .letshiditsm {
-        display: none;
-      }
-    }
-    @media (min-width: 992px) {
-      .letshiditxl {
-        display: flex;
-      }
-      .letshiditlg {
-        display: none;
-      }
-      .letshiditmd {
-        display: none;
-      }
-      .letshiditsm {
-        display: none;
-      }
-    }
-  </style>
+
+  <div class="letshiditlgmd" style="margin: 4px; gap:4px">
+    <?php include 'components/tengah-kontak.php'; ?>
+    <div class="gap-1" style="display:flex; justify-content:space-between;">
+      <?php include 'components/sectionkiri.php'; ?>
+      <?php include 'components/sectionkanan.php'; ?>
+    </div>
+  </div>
 </body>
 
 </html>
