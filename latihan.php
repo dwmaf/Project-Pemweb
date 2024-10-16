@@ -1,6 +1,4 @@
-<?php
-session_start();
-?>
+
 <!DOCTYPE html>
 <html>
 
@@ -33,84 +31,23 @@ session_start();
 </head>
 
 <body>
-  <?php
-  if (isset($_SESSION['success_message'])) {
-    echo "<p style='color: green;'>" . $_SESSION['success_message'] . "</p>";
-    unset($_SESSION['success_message']);
-  }
-  ?>
+  
   <!-- xl -->
-  <div class="letshiditxl  m-1 gap-1 " >
+  <div class="letshiditxl" style="margin: 4px; gap:4px">
     <?php include 'components/sectionkiri.php'; ?>
     <?php include 'components/tengah-latihan.php'; ?>
     <?php include 'components/sectionkanan.php'; ?>
   </div>
-   <div class="letshiditsm">ini sm display</div>
-   <div class="letshiditmd">ini md display</div>
-   <div class="letshiditlg">ini lg display</div>
 
-  <!-- lg -->
+  <div class="letshiditlgmd" style="margin: 4px; gap:4px">
+    <?php include 'components/tengah-latihan-mdlg.php'; ?>
+    <div class="gap-1" style="display:flex; justify-content:space-between;">
+      <?php include 'components/sectionkiri.php'; ?>
+      <?php include 'components/sectionkanan.php'; ?>
+    </div>
+  </div>
+
   
-
-  <style>
-    /* work */
-    @media (max-width: 576px)  {
-      .letshiditxl {
-        display: none;
-      }
-      .letshiditlg {
-        display: none;
-      }
-      .letshiditmd {
-        display: none;
-      }
-      .letshiditsm {
-        display: flex;
-      }
-    }
-    @media (min-width: 576px) AND (max-width:768px)  {
-      .letshiditxl {
-        display: none;
-      }
-      .letshiditlg {
-        display: none;
-      }
-      .letshiditmd {
-        display: flex;
-      }
-      .letshiditsm {
-        display: none;
-      }
-    }
-    @media (min-width: 768px) AND (max-width:992px)  {
-      .letshiditxl {
-        display: none;
-      }
-      .letshiditlg {
-        display: flex;
-      }
-      .letshiditmd {
-        display: none;
-      }
-      .letshiditsm {
-        display: none;
-      }
-    }
-    @media (min-width: 992px) {
-      .letshiditxl {
-        display: flex;
-      }
-      .letshiditlg {
-        display: none;
-      }
-      .letshiditmd {
-        display: none;
-      }
-      .letshiditsm {
-        display: none;
-      }
-    }
-  </style>
 </body>
 
 </html>

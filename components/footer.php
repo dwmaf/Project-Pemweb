@@ -1,9 +1,11 @@
-<div style=" margin:10px; max-width:100%; padding: 20px 50px 5px 70px;
-background-image: url('assets/footer.png');background-size: 100% 100%; background-repeat: no-repeat; height: 282px; max-width:100%;">
+<div style=" margin:0 5px 5px 5px; max-width:100%; padding: 20px 50px 20px 50px;
+background-color:white;
+ max-width:100%; border-radius:55px;">
     <div style="font-family: 'Inter'; font-size:12px">
-    Disclaimer: plase make sure the internet is connected when opening this website, 
-    because this website using bootstrap cdn, fontawesome cdn, and some google api fonts.
-    The main content of this website is not available for browser dimensions smaller than lg (992px).    
+    <strong>Disclaimer:</strong> plase make sure the internet is connected when opening this website, 
+    because this website using bootstrap cdn, fontawesome cdn, and some google api fonts. 
+    Otherwise, some of the styled css won't be able to load.
+    The main content of this website is already available for any browser dimensions (updated: Okt 14, 2024).
     </div>
     <div class="row gap-1" style="margin-top: 30px; margin-bottom:30px">
         <div class="col-lg" style="display: flex; flex-direction:column">

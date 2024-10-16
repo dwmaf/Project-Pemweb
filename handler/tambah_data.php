@@ -1,6 +1,6 @@
 <?php
 
-include 'koneksi.php';
+include '../db/koneksi.php';
 session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mata_kuliah = ''; 
     }
 
-    $target_dir = "uploads/";
+    $target_dir = "../uploads/";
     $file_extension = strtolower(pathinfo($_FILES["foto"]["name"], PATHINFO_EXTENSION));
     $random_filename = uniqid() . "." . $file_extension;
     $target_file = $target_dir . $random_filename;
@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if ($conn->query($sql) === TRUE) {
             $_SESSION['success_message'] = "Data berhasil dimasukkan ke database.";
-            header("Location: index.php");
+            header("Location: ../index.php");
             exit();
         } else {
             echo "Error: " . $sql . "<br>" . $conn->error;
