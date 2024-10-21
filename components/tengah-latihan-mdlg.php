@@ -1,37 +1,38 @@
 <div class="mid-com" style="  
     background-size: 100% 100%; background-repeat: no-repeat; height: 886px; display: flex; flex-direction: column; justify-content: space-between; min-width:50%">
-    <div style="display: flex; justify-content: space-between;">
+    <div class="menu" style="display: flex; position:relative">
         <div style="display: flex; justify-content: space-between;align-items: center;
         padding:20px; 
-         margin-left:30px; 
-         width:clamp(150px, 19vw, 200px);
-         height:clamp(60px, 7vw, 70px);
-         margin-top:40px;
+         margin-left:clamp(15px, 2vw, 30px); 
+         width:clamp(140px, 19vw, 200px);
+         height:clamp(50px, 7vw, 70px);
+         margin-top:clamp(10px, 3vw,40px);
          
         background-color: rgb(0,0,0,0.5);backdrop-filter: blur(10px); border-radius:50px;">
             <a href="index.php">
-                <i class="fa-solid fa-home" style=" font-size: 20px; color:white"></i>
+                <i class="fa-solid fa-home" style=" font-size: clamp(15px, 1.7vw,20px); color:white"></i>
             </a>
             <a href="kontak.php">
-                <i class="fa-solid fa-address-book" style=" font-size: 20px;color:white"></i>
+                <i class="fa-solid fa-address-book" style=" font-size: clamp(15px, 1.7vw,20px);color:white"></i>
             </a>
             <a href="latihan.php">
-                <i class="fa-solid fa-dumbbell" style=" font-size: 20px;color:white"></i>
+                <i class="fa-solid fa-dumbbell" style=" font-size: clamp(15px, 1.7vw,20px);color:white"></i>
             </a>
         </div>
 
-        <div name="judul halaman" style="font-family: 'Bento'; font-size:clamp(30px, 4vw, 40px); background-color: rgb(0,0,0,0.5);backdrop-filter: blur(10px); 
-        border-radius:50px; color:white; 
-        margin-top:40px; padding:10px; height:clamp(60px, 7vw, 70px);
-        display:flex; align-items:center; justify-content:center">latihan</div>
+        <div name="judul halaman" style="font-family: 'Bento'; font-size:clamp(20px, 3.5vw, 40px); background-color: rgb(0,0,0,0.5);backdrop-filter: blur(10px); 
+        border-radius:50px; color:white; letter-spacing: 1px; margin-left:clamp(10px, 3vw,40px);
+        margin-top:clamp(10px, 3vw,40px); padding:10px; height:clamp(50px, 7vw, 70px);
+        display:flex; align-items:center; justify-content:center">Latihan</div>
 
-        <button class="btn btn-menu-lain" style="width: clamp(60px, 8vw, 90px); height: clamp(60px, 8vw, 90px); 
+        <button class="btn-menu-lain" style="width: clamp(60px, 8vw, 90px); height: clamp(60px, 8vw, 90px); 
         background-color:#414144; border-radius:100%; display: flex;justify-content: center;align-items: center; 
-        margin-top:20px; margin-right:clamp(10px, 0vw, 0px)">
-        <i class="fa-solid fa-sliders" style="color:white; font-size:clamp(25px, 3.5vw, 35px);"></i></button>
+         border:none; ">
+            <i class="fa-solid fa-sliders" style="color:white; font-size:clamp(25px, 3.5vw, 35px);"></i>
+        </button>
     </div>
 
-    <div style="background-color: rgb(0,0,0,0.5); padding: 40px; max-width:70%;  border-radius:55px; backdrop-filter:blur(7px); margin-bottom:50%; margin-left:30px;">
+    <div style="background-color: rgb(0,0,0,0.5); padding: clamp(20px, 3vw, 40px); max-width:390px;  border-radius:clamp(40px, 4.5vw,55px); backdrop-filter:blur(7px); margin-bottom:50%; margin-left:clamp(10px, 2vw, 30px); margin-right:10px">
         <form action="" method="post" style="display:flex; ">
             <div id="NIM" class="container-kontak">
                 <label class="label-kontak">Nilai Huruf</label>

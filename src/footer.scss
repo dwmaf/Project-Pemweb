@@ -1,0 +1,40 @@
+.footer-bento {
+  margin: 0 5px 5px 5px;
+  max-width: 100%;
+  padding: 20px 50px 20px 50px;
+  background-color: white;
+  max-width: 100%;
+  border-radius: 55px;
+  .disclaimer {
+    font-family: "Inter";
+    font-size: 12px;
+  }
+  .row {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    gap: 4px;
+    .col-lg {
+      display: flex;
+      flex-direction: column;
+      .bento {
+        font-size: 60px;
+        line-height: 1;
+      }
+      .head {
+        font-family: "Inter";
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+      .content {
+        font-family: "Inter";
+        font-size: 13px;
+        margin-bottom: 10px;
+        a {
+          text-decoration: none;
+          color: black;
+        }
+      }
+    }
+  }
+}

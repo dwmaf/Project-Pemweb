@@ -1,0 +1,63 @@
+.mid-latihan {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 886px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 50%;
+  .form-container {
+    background-color: rgb(0, 0, 0, 0.5);
+    padding: clamp(20px, 3vw, 40px);
+    max-width: 390px;
+    border-radius: clamp(40px, 4.5vw, 55px);
+    backdrop-filter: blur(7px);
+    margin-bottom: 50%;
+    margin-left: clamp(10px, 2vw, 30px);
+    margin-right: 10px;
+    form {
+      display: flex;
+      .input-container {
+        position: relative;
+        margin-bottom: 20px;
+        padding: 10px;
+        border: 1px solid white;
+        border-radius: 15px;
+        width: clamp(270px, 29vw, 300px);
+        .label-kontak {
+          position: absolute;
+          top: -10px;
+          left: 10px;
+          background: #414144;
+          color: white;
+          padding: 0 5px;
+          font-size: 12px;
+          border-radius: 15px;
+        }
+        .input-kontak {
+          width: 100%;
+          background-color: transparent;
+          color: white;
+          outline: none;
+          border: none;
+          option {
+            color: black;
+          }
+        }
+      }
+      button {
+        background: none;
+        border: 1px solid white;
+        border-radius: 15px;
+        margin: 0 0 20px 10px;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        .fa-right-to-bracket {
+          color: white;
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}

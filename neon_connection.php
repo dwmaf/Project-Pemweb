@@ -2,7 +2,7 @@
 
 require 'vendor/autoload.php'; 
 
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+// $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
 $db_connection = $_ENV['DB_CONNECTION'];

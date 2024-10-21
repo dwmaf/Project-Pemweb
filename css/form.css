@@ -1,95 +1,6 @@
-/* form */
-  .container-kontak {
-    position: relative;
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid white;
-    border-radius: 15px;
-    width: 300px;
-  }
-
-  .label-kontak {
-    position: absolute;
-    top: -10px;
-    left: 10px;
-    background: #414144;
-    color: white;
-    padding: 0 5px;
-    font-size: 12px;
-    border-radius:15px
-  }
-  .input-kontak{
-    width: 100%;
-    background-color: transparent;
-    color: white;
-    outline: none;
-    border:none;
-  }
-
-  .options-kontak {
-    display: flex;
-    justify-content: space-between;
-  }
-  .option-kontak {
-    display: flex;
-    align-items: center;
-  }
-  .option-kontak input {
-    margin-right: 10px;
-  }
-  .option-kontak label {
-    color: white;
-  }
-
-/* domisili */
-  .input-kontak option {
-    color: black;
-  }
-/* date */
-  .input-kontak::-webkit-calendar-picker-indicator {
-    filter: invert(1);
-  }
-
 /* pesan data masuk ke database */
   .session-masuk {
     background-image: url('../assets/session.png');
-    background-size: 100% 100%; 
-    background-repeat: no-repeat; 
-    height: 101px; 
-    width: 416px; 
-    margin-bottom:20px; 
-    margin-left:20px; 
-    display:flex;  
-    padding-left:30px; 
-    position:relative
-  }
-  .huruf-jepang {
-    font-family: 'Noto Serif JP'; 
-    font-size:20px; 
-    font-weight:bold; 
-    color:#3CC1CA;line-height:1; display:flex; flex-direction:column; margin-top:10px
-  }
-  .pesan-container {
-    display: flex; flex-direction:column
-  }
-  .pesan-satu {
-    font-size: 30px; font-weight:bold; font-family:'Inter'; margin-left:20px; margin-top:10px
-  }
-  .pesan-dua {
-    font-size: 30px; font-weight:bold; font-family:'Inter'; margin-left:20px; margin-top:-10px 
-  }
-  .btn-close-session {
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    background-color: #3CC1CA;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    position:absolute; 
-    top:0; 
-    right:-10px;
-    border: none;
   }
 /* breakpoint to change the background */
 @media (min-width: 992px) {
@@ -100,9 +11,13 @@
     display: none;
   }
   .mid-com {
-    background-image: url('../assets/tengah-with-image.png');
+    background-image: url('../assets/tengah-with-image.webp');
   }
-  
+  .menu .btn-menu-lain{
+    position:absolute;
+    top: 55px;
+    right:20px;
+  }
 }
 
 @media (max-width: 992px) and (min-width: 576px) {
@@ -121,11 +36,21 @@
   .mid-com {
     background-image: url('../assets/lg/tengah-lg.png');
   }
+  .menu .btn-menu-lain{
+    position:absolute;
+    top: 2em;
+    right: 3em;
+  }
   
 }
 @media (max-width: 768px) and (min-width: 576px) {
   .mid-com {
     background-image: url('../assets/md/tengah-md.png');
+  }
+  .menu .btn-menu-lain{
+    position:absolute;
+    top: 3em;
+    right: 2em;
   }
 }
 @media (max-width: 576px) {
@@ -146,50 +71,33 @@
   .right-com {
     order: 3;
   } 
-  
+  .menu .btn-menu-lain{
+    top: 3em;
+    right: 1em;
+    position:absolute;
+  }
 }
 @media (min-width:768px) {
-  div .fa-icon-used{
-    display: flex;
-    flex-direction:column;
-    align-items:center;
-    gap:20px;
-    border: 2px solid white;
-    padding: 5px;
-    border-radius: 20px;
-  }
   div .color-palette-used{
     height: 95%;
     display: flex;
-    flex-direction: column;
     align-items:center;
     justify-content: center;
-    gap: 4px;
-    border: 2px solid white;
-    padding: 5px;
-    border-radius: 20px;
+    gap: 20px;
   }
-  
+  div .palette {
+    width: 55px;
+    height: 55px;
+    border-radius:15px; 
+    border:none;
+  }
 }
 @media (max-width:768px) {
-  div .fa-icon-used{
-    display: none;
-  }
   div .color-palette-used{
     display: none;
   }
 }
-@media (min-width:1100px) {
-  div .font-family-used{
-    display: flex;
-    border: 2px solid white;
-    padding: 5px;
-    border-radius: 20px;
-    gap: 10px;
-  }
-}
-@media (max-width:1100px) {
-  div .font-family-used{
-    display: none;
-  }
+/* assets import */
+.componen1 {
+  background-image: url("../assets/componen1.png");
 }

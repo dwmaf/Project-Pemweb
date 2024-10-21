@@ -2,3 +2,24 @@
 .vercel
 .env
 /vendor/
+# Node modules
+node_modules/
+.pnpm/
+
+# Vite build output
+dist/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Environment variables
+.env
+.env.local
+
+# OS generated files
+.DS_Store
+Thumbs.db
