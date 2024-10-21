@@ -38,13 +38,12 @@ session_start();
 <body>
 <?php
     if (isset($_SESSION['success_message'])) {
-        echo "<?php include 'components/db-masuk.php'; ?>";
+        include 'components/db-masuk.php';
         unset($_SESSION['success_message']);
     }
-    ?>
+?>
 
   <div class="letshiditxl" style="padding:4px; gap:4px">
-  
     <?php include 'components/sectionkiri.php'; ?>
     <?php include 'components/tengah-index.php'; ?>
     <?php include 'components/sectionkanan.php'; ?>

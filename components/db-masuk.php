@@ -1,4 +1,4 @@
-<div class="db-masuk" style="">
+<div class="db-masuk">
     <div class='session-masuk'>
         <div class='huruf-jepang'>
             <div>せ</div>

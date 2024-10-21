@@ -125,23 +125,23 @@
           color: white;
           font-size: clamp(20px, 3vw, 32px);
         }
-        .jepang-23 {
-          display: flex;
-          justify-content: space-between;
-          .dua3 {
-            font-size: clamp(20px, 4vw, 40px);
-            font-weight: bold;
-            font-family: "Inter";
-            color: #3cc1ca;
-          }
-          .huruf-jepang {
-            font-family: "Noto Serif JP";
-            font-size: clamp(70px, 14vw, 140px);
-            font-weight: bold;
-            color: #3cc1ca;
-            margin-top: -60px;
-            margin-left: clamp(-10px, -2vw, -20px);
-          }
+      }
+      .jepang-23 {
+        display: flex;
+        justify-content: space-between;
+        .dua3 {
+          font-size: clamp(20px, 4vw, 40px);
+          font-weight: bold;
+          font-family: "Inter";
+          color: #3cc1ca;
+        }
+        .huruf-jepang {
+          font-family: "Noto Serif JP";
+          font-size: clamp(70px, 14vw, 140px);
+          font-weight: bold;
+          color: #3cc1ca;
+          margin-top: -60px;
+          margin-left: clamp(-10px, -2vw, -20px);
         }
       }
     }
