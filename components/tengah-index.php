@@ -13,9 +13,11 @@
         </div>
 
         <div class="judul-halaman">Home</div>
-        <button class="btn-menu-lain">
-            <i class="fa-solid fa-sliders"></i>
-        </button>
+        <a href="list-mahasiswa.php">
+            <button class="btn-menu-lain">
+                <i class="fa-solid fa-sliders"></i>
+            </button>
+        </a>
 
     </div>
     <!-- <div class="menu-lain" style="background-color: rgb(0,0,0,0.5); backdrop-filter:blur(5px); display:none; flex-direction:column; padding:10px; border-radius:50px; width:90px;  margin-left:auto; margin-top:-140px">

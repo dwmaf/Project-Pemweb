@@ -11,6 +11,9 @@ devDependencies:
   vite:
     specifier: ^5.4.9
     version: 5.4.9(sass@1.80.3)
+  vite-plugin-sass:
+    specifier: ^0.1.0
+    version: 0.1.0
 
 packages:
 
@@ -659,6 +662,10 @@ packages:
     engines: {node: '>=8.0'}
     dependencies:
       is-number: 7.0.0
+    dev: true
+
+  /vite-plugin-sass@0.1.0:
+    resolution: {integrity: sha512-gLwvs3ozfDAOZCqs+PepkTd4078m8tfq50IlmTW/OphlWsW95uP7lQ5A3NezfUfTZDTCOA4nFlYnOWRpsKYOqw==}
     dev: true
 
   /vite@5.4.9(sass@1.80.3):

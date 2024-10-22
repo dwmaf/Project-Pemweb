@@ -1,35 +1,21 @@
-<div class="mid-com mid-kontak" style="  
-    background-size: 100% 100%; background-repeat: no-repeat; height: 886px; display: flex; flex-direction: column; justify-content: space-between; min-width:50%">
-
-  <div class="menu" style="display: flex; position:relative">
-    <div style="display: flex; justify-content: space-between;align-items: center;
-        padding:20px; 
-         margin-left:clamp(15px, 2vw, 30px); 
-         width:clamp(140px, 19vw, 200px);
-         height:clamp(50px, 7vw, 70px);
-         margin-top:clamp(10px, 3vw,40px);
-         
-        background-color: rgb(0,0,0,0.5);backdrop-filter: blur(10px); border-radius:50px;">
+<div class="mid-com mid-kontak" >
+  <div class="menu" >
+    <div class="daftar-menu">
       <a href="index.php">
-        <i class="fa-solid fa-home" style=" font-size: clamp(15px, 1.7vw,20px); color:white"></i>
+        <i class="fa-solid fa-home"></i>
       </a>
       <a href="kontak.php">
-        <i class="fa-solid fa-address-book" style=" font-size: clamp(15px, 1.7vw,20px);color:white"></i>
+        <i class="fa-solid fa-address-book"></i>
       </a>
       <a href="latihan.php">
-        <i class="fa-solid fa-dumbbell" style=" font-size: clamp(15px, 1.7vw,20px);color:white"></i>
+        <i class="fa-solid fa-dumbbell"></i>
       </a>
     </div>
 
-    <div name="judul halaman" style="font-family: 'Bento'; font-size:clamp(20px, 3.5vw, 40px); background-color: rgb(0,0,0,0.5);backdrop-filter: blur(10px); 
-        border-radius:50px; color:white; letter-spacing: 1px; margin-left:clamp(10px, 3vw,40px);
-        margin-top:clamp(10px, 3vw,40px); padding:10px; height:clamp(50px, 7vw, 70px);
-        display:flex; align-items:center; justify-content:center">Kontak</div>
+    <div class="judul halaman" >Kontak</div>
 
-    <button class="btn-menu-lain" style="width: clamp(60px, 8vw, 90px); height: clamp(60px, 8vw, 90px); 
-        background-color:#414144; border-radius:100%; display: flex;justify-content: center;align-items: center; 
-         border:none; ">
-      <i class="fa-solid fa-sliders" style="color:white; font-size:clamp(25px, 3.5vw, 35px);"></i>
+    <button class="btn-menu-lain" >
+      <i class="fa-solid fa-sliders"></i>
     </button>
   </div>
   <!-- form -->

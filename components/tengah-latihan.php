@@ -1,38 +1,26 @@
 <div class="mid-com mid-latihan">
-    <div class="menu" style="display: flex; position:relative">
-        <div style="display: flex; justify-content: space-between;align-items: center;
-        padding:20px; 
-         margin-left:clamp(15px, 2vw, 30px); 
-         width:clamp(140px, 19vw, 200px);
-         height:clamp(50px, 7vw, 70px);
-         margin-top:clamp(10px, 3vw,40px);
-         
-        background-color: rgb(0,0,0,0.5);backdrop-filter: blur(10px); border-radius:50px;">
+    <div class="menu" >
+        <div class="daftar-menu">
             <a href="index.php">
-                <i class="fa-solid fa-home" style=" font-size: clamp(15px, 1.7vw,20px); color:white"></i>
+                <i class="fa-solid fa-home" ></i>
             </a>
             <a href="kontak.php">
-                <i class="fa-solid fa-address-book" style=" font-size: clamp(15px, 1.7vw,20px);color:white"></i>
+                <i class="fa-solid fa-address-book" ></i>
             </a>
             <a href="latihan.php">
-                <i class="fa-solid fa-dumbbell" style=" font-size: clamp(15px, 1.7vw,20px);color:white"></i>
+                <i class="fa-solid fa-dumbbell" ></i>
             </a>
         </div>
 
-        <div name="judul halaman" style="font-family: 'Bento'; font-size:clamp(20px, 3.5vw, 40px); background-color: rgb(0,0,0,0.5);backdrop-filter: blur(10px); 
-        border-radius:50px; color:white; letter-spacing: 1px; margin-left:clamp(10px, 3vw,40px);
-        margin-top:clamp(10px, 3vw,40px); padding:10px; height:clamp(50px, 7vw, 70px);
-        display:flex; align-items:center; justify-content:center">Latihan</div>
+        <div class="judul halaman" >Latihan</div>
 
-        <button class="btn-menu-lain" style="width: clamp(60px, 8vw, 90px); height: clamp(60px, 8vw, 90px); 
-        background-color:#414144; border-radius:100%; display: flex;justify-content: center;align-items: center; 
-         border:none; ">
-            <i class="fa-solid fa-sliders" style="color:white; font-size:clamp(25px, 3.5vw, 35px);"></i>
+        <button class="btn-menu-lain">
+            <i class="fa-solid fa-sliders"></i>
         </button>
     </div>
     <!-- form -->
     <div class="form-container">
-        <form action="" method="post" style=" display:flex;">
+        <form action="" method="post" > 
             <div id="NIM" class="input-container">
                 <label class="label-kontak">Nilai Huruf</label>
                 <input type="hidden" name="form_type" value="nilai_huruf">
@@ -70,7 +58,7 @@
         }
         ?>
 
-        <form action="" method="post" style="display:flex; ">
+        <form action="" method="post" >
             <div class="input-container">
                 <label class="label-kontak">Genap/Ganjil </label>
                 <select name="genjilgenap" class="input-kontak" required>
