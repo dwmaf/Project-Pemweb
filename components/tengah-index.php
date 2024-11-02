@@ -57,7 +57,5 @@
                 <div class="huruf-jepang">タ</div>
             </div>
         </div>
-
     </div>
-
 </div>

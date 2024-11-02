@@ -19,7 +19,7 @@ session_start();
 </head>
 <style>
   body {
-    background-image: url('assets/aset2.jpg');
+    background-image: url('assets/aset2.webp');
     background-size: cover;
     backdrop-filter: blur(3px);
   }
@@ -67,9 +67,9 @@ session_start();
     // $(document).ready(function() {
     //   $(".btn-menu-lain").click(function() {
     //     if ($(".menu-lain").is(":visible")) {
-    //       $(".menu-lain").hide(); // Sembunyikan tanpa efek
+    //       $(".menu-lain").hide(); // Sembunyikan
     //     } else {
-    //       $(".menu-lain").show(); // Tampilkan tanpa efek
+    //       $(".menu-lain").show(); // Tampilkan
     //     }
     //   });
     // });

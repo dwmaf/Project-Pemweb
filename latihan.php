@@ -15,7 +15,7 @@
 </head>
 <style>
   body {
-    background-image: url('assets/aset2.jpg');
+    background-image: url('assets/aset2.webp');
     background-size: cover;
     backdrop-filter: blur(3px);
   }
