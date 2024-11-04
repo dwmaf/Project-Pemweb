@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'Bento';
+  src: url('../assets/Bento-2OXaW.woff2') format('woff2')
+}
+.bento {
+  font-family: 'Bento', sans-serif;
+}
+@font-face {
+  font-family: 'Genshin';
+  src: url('../assets/zh-cn.woff2') format('woff2')
+}
+.genshin {
+  font-family: 'Genshin', sans-serif;
+}
 /* pesan data masuk ke database */
   .session-masuk {
     background-image: url('../assets/session.png');

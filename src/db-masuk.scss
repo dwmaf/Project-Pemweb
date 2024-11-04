@@ -33,16 +33,10 @@
       margin-left: 20px;
       justify-content: center;
       gap: 10px;
-      .pesan-satu {
+      .pesan-satu, .pesan-dua {
         font-size: clamp(25px, 2.7vw, 30px);
         font-weight: bold;
-        font-family: "Inter";
-        line-height: 1;
-      }
-      .pesan-dua {
-        font-size: clamp(25px, 2.7vw, 30px);
-        font-weight: bold;
-        font-family: "Inter";
+        font-family: "Genshin";
         line-height: 1;
       }
     }

@@ -1,8 +1,8 @@
 <div class="header-bento">
-    <div class="uas-pemweb">
+    <a href="./index.php" class="uas-pemweb">
         <div class="bento">UTS</div>
         <div class="bento">PemWeb</div>
-    </div>
+    </a>
     <div class="color-palette-used">
         <div class="palette" style=" background-color: #3CC1CA; "></div>
         <div class="palette" style=" background-color:#FF0000; "></div>
