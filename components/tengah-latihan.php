@@ -12,11 +12,11 @@
             </a>
         </div>
 
-        <div class="judul halaman" >Latihan</div>
+        <div class="judul-halaman" >Latihan</div>
 
-        <button class="btn-menu-lain">
+        <!-- <button class="btn-menu-lain" class="a-btn-menu-lain">
             <i class="fa-solid fa-sliders"></i>
-        </button>
+        </button> -->
     </div>
     <!-- form -->
     <div class="form-container">

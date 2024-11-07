@@ -1,18 +1,18 @@
 .mid-com {
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+  // background-size: 100% 100%;
+  // background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-width: 50%;
-  height: 886px;
+  // min-width: 50%;
+  // height: 886px;
 
   .menu {
     display: flex;
     position: relative;
     .daftar-menu {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-between; 
       align-items: center;
       padding: 20px;
       margin-left: clamp(15px, 2vw, 30px);
@@ -43,18 +43,20 @@
       align-items: center;
       justify-content: center;
     }
-    .btn-menu-lain {
-      width: clamp(60px, 8vw, 90px);
-      height: clamp(60px, 8vw, 90px);
-      background-color: #414144;
-      border-radius: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border: none;
-
-      color: white;
-      font-size: clamp(25px, 3.5vw, 35px);
+    .a-btn-menu-lain{
+      display: hidden;
+      .btn-menu-lain {
+        width: clamp(60px, 8vw, 90px);
+        height: clamp(60px, 8vw, 90px);
+        background-color: #414144;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        color: white;
+        font-size: clamp(25px, 3.5vw, 35px);
+      }
     }
   }
 

@@ -1,21 +1,33 @@
+.mid-com {
+  
+  min-width: 50%;
+  height: 886px;
+  /* max-width: 719px; */
+  background-image: url("../assets/aset2.webp");
+  background-size: cover;
+  background-position: center;
+  mask-image: url("../assets/tengah-with-image.webp");
+  mask-size: 100% 886px;
+  mask-repeat: no-repeat;
+}
 @font-face {
-  font-family: 'Bento';
-  src: url('../assets/Bento-2OXaW.woff2') format('woff2')
+  font-family: "Bento";
+  src: url("../assets/Bento-2OXaW.woff2") format("woff2");
 }
 .bento {
-  font-family: 'Bento', sans-serif;
+  font-family: "Bento", sans-serif;
 }
 @font-face {
-  font-family: 'Genshin';
-  src: url('../assets/zh-cn.woff2') format('woff2')
+  font-family: "Genshin";
+  src: url("../assets/zh-cn.woff2") format("woff2");
 }
 .genshin {
-  font-family: 'Genshin', sans-serif;
+  font-family: "Genshin", sans-serif;
 }
 /* pesan data masuk ke database */
-  .session-masuk {
-    background-image: url('../assets/session.png');
-  }
+.session-masuk {
+  background-image: url("../assets/session.png");
+}
 /* breakpoint to change the background */
 @media (min-width: 992px) {
   .letshiditxl {
@@ -24,13 +36,13 @@
   .letshiditlgmd {
     display: none;
   }
-  .mid-com {
-    background-image: url('../assets/tengah-with-image.webp');
-  }
-  .menu .btn-menu-lain{
-    position:absolute;
+  /* .mid-com {
+    background-image: url("../assets/tengah-with-image.webp");
+  } */
+  .menu .btn-menu-lain {
+    position: absolute;
     top: 55px;
-    right:20px;
+    right: 20px;
   }
 }
 
@@ -43,26 +55,25 @@
     flex-direction: column;
   }
   .left-com {
-    max-width:50%;
+    max-width: 50%;
   }
 }
 @media (max-width: 992px) and (min-width: 768px) {
-  .mid-com {
-    background-image: url('../assets/lg/tengah-lg.png');
-  }
-  .menu .btn-menu-lain{
-    position:absolute;
+  /* .mid-com {
+    background-image: url("../assets/lg/tengah-lg.png");
+  } */
+  .menu .btn-menu-lain {
+    position: absolute;
     top: 2em;
     right: 3em;
   }
-  
 }
 @media (max-width: 768px) and (min-width: 576px) {
-  .mid-com {
-    background-image: url('../assets/md/tengah-md.png');
-  }
-  .menu .btn-menu-lain{
-    position:absolute;
+  /* .mid-com {
+    background-image: url("../assets/md/tengah-md.png");
+  } */
+  .menu .btn-menu-lain {
+    position: absolute;
     top: 3em;
     right: 2em;
   }
@@ -75,39 +86,42 @@
     display: flex;
     flex-direction: column;
   }
-  .mid-com {
+  /* .mid-com {
     order: 1;
-    background-image: url('../assets/sm/tengah-sm.png');
-  }
+    background-image: url("../assets/sm/tengah-sm.png");
+  } */
+   .mid-com{
+    order: 1;
+   }
   .left-com {
     order: 2;
   }
   .right-com {
     order: 3;
-  } 
-  .menu .btn-menu-lain{
+  }
+  .menu .btn-menu-lain {
     top: 3em;
     right: 1em;
-    position:absolute;
+    position: absolute;
   }
 }
-@media (min-width:768px) {
-  div .color-palette-used{
+@media (min-width: 768px) {
+  div .color-palette-used {
     height: 95%;
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: center;
     gap: 20px;
   }
   div .palette {
     width: 55px;
     height: 55px;
-    border-radius:15px; 
-    border:none;
+    border-radius: 15px;
+    border: none;
   }
 }
-@media (max-width:768px) {
-  div .color-palette-used{
+@media (max-width: 768px) {
+  div .color-palette-used {
     display: none;
   }
 }
@@ -115,6 +129,6 @@
 .componen1 {
   background-image: url("../assets/componen1.png");
 }
- .bait3{
+.bait3 {
   background-image: url("../assets/bait-3.png");
 }
