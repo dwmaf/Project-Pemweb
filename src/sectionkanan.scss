@@ -2,7 +2,8 @@
   background-size: 100% 100%;
   background-repeat: no-repeat;
   min-width: 24%;
-  height: 886px;
+  max-width: 351px;
+  height: 886px; 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -48,15 +49,15 @@
     z-index: 2;
     margin-top: -20px;
     .kosong3 {
-      font-size: clamp(60px, 6.5vw, 70px);
+      font-size: clamp(45px, 5vw, 55px);
       font-weight: bold;
-      font-family: "Inter";
+      font-family: "Genshin";
       color: #3cc1ca;
+      margin-top: 25px;
     }
     .huruf-jepang {
-      font-family: "Noto Serif JP";
+      font-family: "Bento";
       font-size: clamp(120px, 12.5vw, 140px);
-      font-weight: bold;
       color: #3cc1ca;
       margin-top: -60px;
     }

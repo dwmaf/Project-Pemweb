@@ -2,7 +2,7 @@
       <div class="slicing-stack">
         <div class="bento bento-atas">Slicing</div>
         <div class="bento bento-bawah" >stack</div>
-      </div>
+      </div> 
       <div class="image-design-source">
         <div class="desc">Font yang digunakan antara lain 'HYWenHei', 'Bento', dan 'Noto serif japan'. Logo-logo yang digunakan berasal dari font awesome.</div>
         <div class="img-design" >Image Source:</div>
@@ -12,12 +12,12 @@
       </div>
       <div class="kosong3-jepang" >
         <div class="kosong3" >03</div>
-        <div class="huruf-jepang">ネ</div>
+        <div class="huruf-jepang">X</div>
       </div>
       <div class="gambar-right" >
         <img src="assets/aset2.webp" alt="">
       </div>
-      <a class="tombol-merah" target="_blank" href="https://github.com/dwmaf/Project-Pemweb" style="">
+      <a class="tombol-merah" target="_blank" href="https://github.com/dwmaf/Project-Pemweb" >
         <i class="fa-solid fa-code"></i>
       </a>
 

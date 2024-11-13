@@ -1,0 +1,46 @@
+.navbar {
+  margin: 5px;
+  border-radius: 55px;
+  .container-fluid {
+    padding: 15px;
+    .navbar-brand { 
+      display: flex;
+      font-family: "genshin";
+      align-items: center;
+      border-radius: 40px;
+      padding: 10px;
+      border: solid 2px black;
+      .uas {
+        color: #ff0000;
+        margin: 0;
+      }
+      .pemweb {
+        color: #3cc1ca;
+        margin: 0;
+      }
+    }
+    .navbar-collapse {
+      .navbar-nav {
+        font-family: "genshin";
+        font-size: 20px;
+        .nav-link {
+          color: black;
+        }
+        .nav-link:not(.regis):hover {
+          color: #3cc1ca;
+        }
+        .nav-link.active {
+          color: #ff0000;
+        }
+        .regis {
+          color: black;
+          background-color: #3cc1ca;
+          padding: 10px;
+          border-radius: 40px;
+          width: 90px;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}

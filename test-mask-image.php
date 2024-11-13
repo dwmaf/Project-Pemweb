@@ -19,19 +19,19 @@
         background-image: url('assets/aset2.webp');
         background-size: cover;
         backdrop-filter: blur(3px);
-        
         min-height: 100vh;
     }
 
     .try-mask-image {
-        width: 100%; 
+        width: 100%;
         max-width: 719px; 
-        height: 886px; 
-        background-image: url('assets/aset2.webp');
+        aspect-ratio: 719 / 886; 
+        background-image: url('assets/aset6.jpg');
         background-size: cover;
         background-position: center;
         mask-image: url('assets/tengah-with-image.webp');
-        mask-size: 100% 886px;
+        mask-size: cover;
+        mask-position: center;
         mask-repeat: no-repeat;
     }
 </style>

@@ -1,23 +1,16 @@
-<div class="mid-com mid-kontak" >
-  <div class="menu" >
-    <div class="daftar-menu">
-      <a href="index.php">
-        <i class="fa-solid fa-home"></i>
-      </a>
-      <a href="kontak.php">
-        <i class="fa-solid fa-address-book"></i>
-      </a>
-      <a href="latihan.php">
-        <i class="fa-solid fa-dumbbell"></i>
-      </a>
-    </div>
-
-    <div class="judul-halaman " >Kontak</div>
-
-    <!-- <button class="btn-menu-lain" class="a-btn-menu-lain">
-      <i class="fa-solid fa-sliders"></i>
-    </button> -->
+<div class="mid-kontak" >
+  <div class="daftar-menu">
+    <a href="index.php">
+      <i class="fa-solid fa-home"></i>
+    </a>
+    <a href="kontak.php">
+      <i class="fa-solid fa-address-book"></i>
+    </a>
+    <a href="latihan.php">
+      <i class="fa-solid fa-dumbbell"></i>
+    </a>
   </div>
+  
   <!-- form -->
   <div class="form-container">
     <form class="form-kontak" method="post" action="handler/tambah_data.php" enctype="multipart/form-data">

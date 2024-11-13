@@ -1,6 +1,6 @@
 <div class="left-com  " style="background-image: url('assets/kiri.png'); ">
       <div class="container1">
-        <div class="huruf-jepang">ォ</div>
+        <div class="huruf-jepang">X</div> 
         <a href="index.php">
           <div>
             Home
@@ -20,7 +20,7 @@
           <div class="kosong7" >07</div>
           <div class="dawam-af">Dawam AF</div>
         </div>
-        <div class="huruf-jepang">ネ</div>
+        <div class="huruf-jepang">X</div>
       </div>
 
       <p class="desc">Tech stack yang digunakan untuk membuat website ini antara lain figma untuk mendesain shapenya, php untuk menangani form, bootstrap dan inline css untuk styling</p>

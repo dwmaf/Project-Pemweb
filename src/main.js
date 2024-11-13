@@ -6,3 +6,4 @@ import './tengah-latihan.scss';
 import './db-masuk.scss';
 import './header.scss';
 import './footer.scss';
+import './navbar.scss';

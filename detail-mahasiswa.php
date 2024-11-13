@@ -49,7 +49,7 @@ if (strpos($makul, ',') !== false) {
 
 <body class="detail-mahasiswa">
     <?php include 'components/header.php'; ?>
-    <div class="container mt-2 mb-2 d-flex flex-column align-items-center ">
+    <div class="p-4 mt-2 mb-2 d-flex flex-column align-items-center ">
         <div class="row d-flex justify-content-center gap-2" style="padding: 0;">
             <div class="gambar-kiri col-6 d-flex " style="background-image:url('assets/bait.png');
                         background-size: contain;
@@ -66,10 +66,10 @@ if (strpos($makul, ',') !== false) {
             </div>
             <div class="data-kanan col-6 d-flex flex-column gap-2" style="width: clamp(300px,38.4vw, 468px); ">
                 <div class="data-atas" style="width: clamp(300px,38.4vw, 468px);background-color: white;border-radius: 55px;padding:20px; ">
-                    <h2 class="genshin" style=""><?= htmlspecialchars($mahasiswa['nama'], ENT_QUOTES, 'UTF-8') ?></h2>
+                    <h2 class="genshin"><?= htmlspecialchars($mahasiswa['nama'], ENT_QUOTES, 'UTF-8') ?></h2>
                     <h5 class="genshin" style="color:darkgrey"><?= htmlspecialchars($mahasiswa['nim'], ENT_QUOTES, 'UTF-8') ?></h5>
                     <h4 class="genshin" style="justify-self:start;background-color:#3cc1ca; border-radius:40px; padding:10px;"><?= htmlspecialchars($mahasiswa['kelamin'], ENT_QUOTES, 'UTF-8') ?></h4>
-                    <div class="d-flex gap-1" style="flex-wrap: wrap;">
+                    <div class="d-flex gap-1" style="flex-wrap: wrap; margin-bottom:8px;">
                         <?php foreach ($makulArray as $index => $matkul) : ?>
                             <h6 class="genshin" style="justify-self:start;border:solid 1px black;font-size:15px; border-radius:40px; padding:6px;margin-bottom:0;">
                                 <?= htmlspecialchars($matkul, ENT_QUOTES, 'UTF-8') ?>
@@ -85,8 +85,16 @@ if (strpos($makul, ',') !== false) {
                         <h3 class="genshin" style="margin-bottom:0; font-weight:bold"><?= htmlspecialchars($mahasiswa['domisili'], ENT_QUOTES, 'UTF-8') ?></h3>
                     </div>
                 </div>
-                <div class="data-bawah" style="width: clamp(300px,38.4vw, 468px);background-color: white;border-radius: 55px;">
-                    
+                <div class="data-bawah" style="width: clamp(300px,38.4vw, 468px);background-color: white;border-radius: 55px; padding: 20px;">
+                    <div style="display: flex; gap:16px">
+                        <button style="padding:10px; border:solid 1px black; border-radius:20px;background-color: yellow">
+                            <p class="genshin" style="margin: 0;font-size:14px;">Edit</p>
+                        </button>
+                        <button style="padding:10px; border:solid 1px black; border-radius:20px;background-color: red">
+                            <p class="genshin" style="margin: 0;font-size:14px;color:white">Hapus</p>
+                        </button>
+                        
+                    </div>
                 </div>
             </div>
         </div>
