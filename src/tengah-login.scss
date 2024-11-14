@@ -1,0 +1,115 @@
+.form-credential {
+  width: clamp(300px, 35vw, 400px);
+  background-color: white;
+  border-radius: 10px;
+  padding: clamp(15px, 2vw, 25px);
+  .header-login {
+    display: flex;
+    justify-content: space-between;
+    .title-login {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .uas-pemweb{
+        display: flex;
+        font-family: "Genshin";
+        .uas {
+          color: #3cc1ca;
+          font-size: 30px;
+          margin: 0;
+        }
+        .pemweb {
+          color: #01454a;
+          font-size: 30px;
+          margin: 0;
+        }
+      }
+      .pesan-kecil{
+        font-size: 11px;
+        font-family: "Genshin";
+        margin: 0;
+      }
+    }
+  }
+  .form-kontak {
+    display: flex;
+    flex-direction: column;
+    margin-top: clamp(20px, 3vw, 40px);
+    .input-container {
+      position: relative;
+      padding: 10px;
+      border: 1px solid #2a7f85;
+      border-radius: 10px;
+      .label-login {
+        position: absolute;
+        top: -10px;
+        left: 10px;
+        background: #2a7f85;
+        color: white;
+        padding: 0 5px;
+        font-size: 12px;
+        border-radius: 15px;
+        font-family: "Genshin";
+      }
+      .input-login {
+        width: 100%;
+        background-color: transparent;
+        color: black;
+        outline: none;
+        border: none;
+        font-family: "Genshin";
+      }
+      input:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0 30px white inset !important;
+      }
+    }
+    .error-message-gmail {
+      color: #ff0000;
+      margin: 0;
+      font-family: 'Genshin';
+      font-size: 12px;
+      display: none;
+      margin-top: 5px;
+    }
+    .password-error-message {
+      color: #ff0000;
+      border: solid 1px #ff0000;
+      margin-bottom: 10px;
+      padding: 5px;
+      border-radius: 15px;
+      gap: 5px;
+      display: flex;
+      flex-direction: column;
+      li{
+        font-size: 12px;
+        margin-left: 20px;
+        font-family: 'Genshin';
+      }
+    }
+    .input-container:focus-within {
+      border-color: #3cc1ca;
+    }
+    .input-container:focus-within .label-login {
+      background-color: #3cc1ca;
+    }
+    .regis-forgot-pass{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      font-family: 'Genshin';
+      a{
+        font-size: 12px;
+        color: #01454a;
+        text-decoration: none;
+      }
+    }
+    button {
+      background-color: #3cc1ca;
+      color: #01454a;
+      border-radius: 15px;
+      padding: 10px;
+      border: none;
+      font-family: "Genshin";
+    }
+  }
+}

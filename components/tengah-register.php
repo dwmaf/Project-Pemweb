@@ -8,9 +8,8 @@
       </div>
       <h6 class="pesan-kecil">LET'S MAKE SOME MONEY BRO</h6>
     </div>
-    <a href="./index.php" style="color:black">
-      <i class="fa-solid fa-xmark fa" style="cursor: pointer;">
-      </i>
+    <a href="./index.php" style=" color:black;">
+      <i class="fa-solid fa-xmark fa" style="cursor: pointer; "></i>
     </a>
   </div>
   <form class="form-kontak" method="post" action="handler/login_handler.php">
@@ -23,11 +22,17 @@
       <label class="label-login">Password</label>
       <input id="password-login" class="input-login " type="password" placeholder="Buat password" name="password" required>
     </div>
-    <h6 id="error-empty" class="error-message-gmail">Password tidak boleh kosong</h6>
+    <ul id="password-error" class="password-error-message">
+      <li id="duabelas">12-16 karakter</li>
+      <li id="huruf-besar">Mengandung huruf besar</li>
+      <li id="huruf-kecil">Mengandung huruf kecil</li>
+      <li id="mengandung-angka">Mengandung angka</li>
+      <li id="mengandung-simbol">Mengandung simbol</li>
+    </ul>
     <div class="regis-forgot-pass">
-      <a href="./register.php">Register</a>
-      <a href="./index.php">Forgot Password?</a>
+      <a href="./login.php">Login</a>
+      <a href="./index.php">Home</a>
     </div>
-    <button type="submit">Login</button>
+    <button type="submit">Register</button>
   </form>
 </div>

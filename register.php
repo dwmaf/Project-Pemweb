@@ -36,7 +36,7 @@
 </head>
 
 <body>
-  <?php include 'components/tengah-login.php'; ?>
+  <?php include 'components/tengah-register.php'; ?>
   <script src="./js/index.js"></script>
 </body>
 

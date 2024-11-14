@@ -48,7 +48,7 @@ if (strpos($makul, ',') !== false) {
 </head>
 
 <body class="detail-mahasiswa">
-    <?php include 'components/header.php'; ?>
+    <?php include 'components/navbar.php'; ?>
     <div class="p-4 mt-2 mb-2 d-flex flex-column align-items-center ">
         <div class="row d-flex justify-content-center gap-2" style="padding: 0;">
             <div class="gambar-kiri col-6 d-flex " style="background-image:url('assets/bait.png');

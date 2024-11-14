@@ -57,7 +57,7 @@ while ($row = mysqli_fetch_assoc($query)) {
 </head>
 
 <body class="list-mahasiswa">
-    <?php include 'components/header.php'; ?>
+    <?php include 'components/navbar.php'; ?>
     <div class="container " style="min-height: 100vh;">
         <div class="row g-0 gap-3 pt-3 pb-3 justify-content-center">
             <?php foreach ($mahasiswas as $index => $mahasiswa) : ?>

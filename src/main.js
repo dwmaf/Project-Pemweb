@@ -7,3 +7,4 @@ import './db-masuk.scss';
 import './header.scss';
 import './footer.scss';
 import './navbar.scss';
+import './tengah-login.scss';
