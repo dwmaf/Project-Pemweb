@@ -82,7 +82,7 @@ if (strpos($makul, ',') !== false) {
                             <h5 class="genshin" style="margin-bottom:0; font-size:13px;"><?= htmlspecialchars($tahun, ENT_QUOTES, 'UTF-8') ?></h5>
                         </div>
                         <span style="height: 28px;  border:solid 1px black;"></span>
-                        <h3 class="genshin" style="margin-bottom:0; font-weight:bold"><?= htmlspecialchars($mahasiswa['domisili'], ENT_QUOTES, 'UTF-8') ?></h3>
+                        <h3 class="genshin" style="margin-bottom:0; font-weight:bold; color:#01454a"><?= htmlspecialchars($mahasiswa['domisili'], ENT_QUOTES, 'UTF-8') ?></h3>
                     </div>
                 </div>
                 <div class="data-bawah" style="width: clamp(300px,38.4vw, 468px);background-color: white;border-radius: 55px; padding: 20px;">

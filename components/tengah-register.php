@@ -12,7 +12,7 @@
       <i class="fa-solid fa-xmark fa" style="cursor: pointer; "></i>
     </a>
   </div>
-  <form class="form-kontak" method="post" action="handler/login_handler.php">
+  <form class="form-kontak" method="post" action="handler/register_handler.php">
     <div class="input-container">
       <label class="label-login">Gmail</label>
       <input class="input-login" id="email-input" type="email" placeholder="Masukkan Email anda" name="email" required>
