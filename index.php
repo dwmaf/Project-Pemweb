@@ -42,7 +42,7 @@ session_start();
   }
   ?>
 
-  <div class="letshiditxl" style="padding:4px; gap:4px; align-items:center;">
+  <div class="letshiditxl" style="margin:4px; gap:4px; align-items:center;">
     <?php include 'components/sectionkiri.php'; ?>
     <?php include 'components/tengah-index.php'; ?>
     <?php include 'components/sectionkanan.php'; ?>

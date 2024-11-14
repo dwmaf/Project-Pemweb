@@ -77,7 +77,7 @@
         <input type="file" name="foto" accept="image/*" class="input-kontak" required>
       </div>
 
-      <button type="submit" style="background-color: #3CC1CA; width:70px; border-radius:20px; padding-left:20px; padding-right:20px; padding-top:10px; padding-bottom:10px; border:none; font-family:'Inter'">Add</button>
+      <button type="submit">Add</button>
     </form>
   </div>
 </div>

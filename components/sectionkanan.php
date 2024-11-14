@@ -4,7 +4,7 @@
         <div class="bento bento-bawah" >stack</div>
       </div> 
       <div class="image-design-source">
-        <div class="desc">Font yang digunakan antara lain 'HYWenHei', 'Bento', dan 'Noto serif japan'. Logo-logo yang digunakan berasal dari font awesome.</div>
+        <div class="desc">Font yang digunakan antara lain 'HYWenHei' dan 'Bento'. Logo-logo yang digunakan berasal dari font awesome.</div>
         <div class="img-design" >Image Source:</div>
         <a target="_blank" href="https://in.pinterest.com/pin/389279961557066844/">Pinterest</a>
         <div class="img-design" >Design Inspiration:</div>

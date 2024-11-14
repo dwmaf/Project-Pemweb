@@ -8,3 +8,4 @@ import './header.scss';
 import './footer.scss';
 import './navbar.scss';
 import './tengah-login.scss';
+import './detail-mahasiswa.scss';

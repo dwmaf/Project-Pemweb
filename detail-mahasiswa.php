@@ -87,13 +87,15 @@ if (strpos($makul, ',') !== false) {
                 </div>
                 <div class="data-bawah" style="width: clamp(300px,38.4vw, 468px);background-color: white;border-radius: 55px; padding: 20px;">
                     <div style="display: flex; gap:16px">
-                        <button style="padding:10px; border:solid 1px black; border-radius:20px;background-color: yellow">
+                        <button popovertarget="my-popover" style="padding:10px; border:solid 1px black; border-radius:20px;background-color: yellow">
                             <p class="genshin" style="margin: 0;font-size:14px;">Edit</p>
                         </button>
-                        <button style="padding:10px; border:solid 1px black; border-radius:20px;background-color: red">
-                            <p class="genshin" style="margin: 0;font-size:14px;color:white">Hapus</p>
-                        </button>
-                        
+                        <form method="POST" onsubmit="return confirm('Apakah Anda yakin ingin menghapus data ini?');" action="handler/delete_data.php">
+                            <input type="hidden" name="id" value="<?= htmlspecialchars($mahasiswa['id'], ENT_QUOTES, 'UTF-8') ?>">
+                            <button type="submit" name="delete" style="padding: 10px; border: solid 1px black; border-radius: 20px; background-color: red">
+                                <p class="genshin" style="margin: 0; font-size: 14px; color: white;">Hapus</p>
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -103,7 +105,75 @@ if (strpos($makul, ',') !== false) {
     <?php include 'components/footer.php'; ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
+    <div popover id="my-popover" class="form-edit">
+        <form class="form-kontak" method="post" action="handler/update_data.php" enctype="multipart/form-data">
+            <h5>Edit Form</h5>
+            <div id="NIM" class="input-container">
+                <label class="label-kontak">NIM</label>
+                <i class="fa-solid fa-id-card icon-fa"></i>
+                <input class="input-kontak nama-nim" type="text" placeholder="Masukkan NIM" name="nim" required value="<?= htmlspecialchars($mahasiswa['nama'], ENT_QUOTES, 'UTF-8') ?>">
+            </div>
+            <div id="nama" class="input-container">
+                <label class="label-kontak">Nama Lengkap</label>
+                <i class="fas fa-user icon-fa"></i>
+                <input class="input-kontak nama-nim" type="text" placeholder="Masukkan nama" name="nama" required value="<?= htmlspecialchars($mahasiswa['nim'], ENT_QUOTES, 'UTF-8') ?>">
+            </div>
 
+            <div id="radio" class="input-container">
+                <label class="label-kontak">Jenis Kelamin</label>
+                <div class="options-kontak">
+                    <div class="option-kontak">
+                        <input required type="radio" id="laki-laki" name="kelamin" value="laki-laki" value="laki-laki" <?= $mahasiswa['kelamin'] == 'laki-laki' ? 'checked' : '' ?>>
+                        <label for="laki-laki">Laki-laki</label>
+                    </div>
+                    <div class="option-kontak">
+                        <input required type="radio" id="perempuan" name="kelamin" value="perempuan" value="perempuan" <?= $mahasiswa['kelamin'] == 'perempuan' ? 'checked' : '' ?>>
+                        <label for="perempuan">Perempuan</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-container">
+                <label class="label-kontak">Matakuliah</label>
+                <div class="options-kontak">
+                    <div class="option-kontak">
+                        <input type="checkbox" id="web" name="makul[]" value="Pemrograman Web" >
+                        <label for="web">Web</label>
+                    </div>
+                    <div class="option-kontak">
+                        <input type="checkbox" id="basis-data" name="makul[]" value="Perancangan Basis Data" >
+                        <label for="basis-data">Basis Data</label>
+                    </div>
+                    <div class="option-kontak">
+                        <input type="checkbox" id="jaringan" name="makul[]" value="Jaringan" >
+                        <label for="jaringan">Jaringan</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-container">
+                <label class="label-kontak">Domisili</label>
+                <select name="domisili" class="input-kontak" required>
+                    <option value="Kubu Raya" <?= $mahasiswa['domisili'] == 'Kubu Raya' ? 'selected' : '' ?>>Kubu Raya</option>
+                    <option value="Pontianak" <?= $mahasiswa['domisili'] == 'Pontianak' ? 'selected' : '' ?>>Pontianak</option>
+                    <option value="Sungai Raya" <?= $mahasiswa['domisili'] == 'Sungai Raya' ? 'selected' : '' ?>>Sungai Raya</option>
+                    <option value="Sungai Raya Dalam" <?= $mahasiswa['domisili'] == 'Sungai Raya Dalam' ? 'selected' : '' ?>>Sungai Raya Dalam</option>
+                </select>
+            </div>
+
+            <div class="input-container">
+                <label class="label-kontak">Tgl. Lahir</label>
+                <input name="tgllahir" type="date" class="input-kontak" required value="<?= htmlspecialchars($mahasiswa['tgl_lahir'], ENT_QUOTES, 'UTF-8') ?>">
+            </div>
+
+            <div class="input-container">
+                <label class="label-kontak">Foto</label>
+                <input type="file" name="foto" accept="image/*" class="input-kontak" required>
+            </div>
+
+            <button type="submit">Update</button>
+        </form>
+    </div>
+</body>
 
 </html>

@@ -10,6 +10,7 @@
   padding: 20px;
   .slicing-stack {
     font-size: 60px;
+    margin-left: 10px;
     .bento-atas {
       line-height: 1;
     }
@@ -21,12 +22,10 @@
   .image-design-source {
     display: flex;
     flex-direction: column;
-    margin-top: 40px;
+    margin-top: 30px;
     .desc {
-      width: 70%;
       font-size: 12px;
       font-family: "Genshin";
-      margin-bottom: 10px;
     }
     .img-design {
       width: 70%;
@@ -38,35 +37,31 @@
       font-family: "Genshin";
       text-decoration: none;
     }
-    .a-design {
-      margin-bottom: 20px;
-    }
+    
   }
   .kosong3-jepang {
     display: flex;
     justify-content: space-between;
     position: relative;
     z-index: 2;
-    margin-top: -20px;
     .kosong3 {
       font-size: clamp(45px, 5vw, 55px);
       font-weight: bold;
       font-family: "Genshin";
       color: #3cc1ca;
-      margin-top: 25px;
     }
     .huruf-jepang {
       font-family: "Bento";
       font-size: clamp(120px, 12.5vw, 140px);
       color: #3cc1ca;
-      margin-top: -60px;
+      line-height: 0.5;
     }
   }
   .gambar-right {
     border-radius: 100px;
     overflow: hidden;
     height: 40%;
-    margin-top: -100px;
+    margin-top: -70px;
     position: relative;
     z-index: 1;
     img {
@@ -97,7 +92,6 @@
     justify-content: space-between;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 30px;
     gap: clamp(30px, 2vw, 40px);
     .icon-angka {
       display: flex;
@@ -107,7 +101,7 @@
         font-size: 30px; margin-bottom:10px;
       }
       .angka{
-        font-family: 'Inter'; font-size:12px; font-weight:bold
+        font-family: 'Genshin'; font-size:12px; font-weight:bold
       }
     }
     .garis-putus{

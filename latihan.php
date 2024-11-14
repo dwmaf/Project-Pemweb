@@ -31,7 +31,7 @@
 
 <body>
 <?php include 'components/navbar.php'; ?>
-  <!-- xl -->
+  
   <div class="letshiditxl" style="margin: 4px; gap:4px; align-items:center;">
     <?php include 'components/sectionkiri.php'; ?>
     <?php include 'components/tengah-latihan.php'; ?>

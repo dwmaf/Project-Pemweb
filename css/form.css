@@ -30,7 +30,7 @@
     background-image: url("../assets/aset2.webp");
     background-size: cover;
     background-position: center;
-    mask-image: url("../assets/tengah-with-image.webp");
+    mask-image: url("../assets/tengah.png");
     mask-size: 100% 100%;
     mask-repeat: no-repeat;
   }
@@ -50,8 +50,8 @@
   .mid-kontak,
   .mid-latihan {
     width: 100%;
-    max-width: 719px;
-    aspect-ratio: 719 / 886;
+    max-width: 706px;
+    aspect-ratio: 706 / 870;
     background-image: url("../assets/aset2.webp");
     border-radius: 50px;
     background-repeat: no-repeat;
@@ -61,12 +61,12 @@
   }
   .mid-com {
     width: 100%;
-    max-width: 719px;
-    aspect-ratio: 719 / 886;
+    max-width: 706px;
+    aspect-ratio: 706 / 870;
     background-image: url("../assets/aset2.webp");
     background-size: cover;
     background-position: center;
-    mask-image: url("../assets/tengah-with-image.webp");
+    mask-image: url("../assets/tengah.png");
     mask-size: cover;
     mask-position: center;
     mask-repeat: no-repeat;
